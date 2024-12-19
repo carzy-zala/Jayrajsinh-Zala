@@ -14,28 +14,48 @@ function Navbar() {
   };
 
   return (
-    <nav className="grid grid-cols-6 px-16 py-3 items-center justify-center ">
-      <NavLink to="/" className="col-span-2 text-2xl">
-        <span className="text-2xl font-semibold text-green-btn">J</span>Zala.
+    <nav className="grid grid-cols-[2fr_3fr_1fr] px-[10%] py-3 items-center justify-center ">
+      <NavLink to="/" className="text-3xl font-montserrat font-semibold">
+        <span className="text-green-btn">J</span>Zala.
       </NavLink>
-      <div className=" col-start-3 col-span-3 grid grid-cols-4 items-center justify-items-center">
-        <NavLink to="/" className={" text-xl"}>
+      <div className="  grid grid-cols-4 items-center place-items-center">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+          }
+        >
           {location.pathname === "/" ? `{ Home }` : `  Home  `}
         </NavLink>
-        <NavLink to="/services" className={" text-xl"}>
+        <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+          }
+        >
           {location.pathname === "/services" ? `{ Services }` : `  Services  `}
         </NavLink>
-        <NavLink to="/projects" className={" text-xl"}>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+          }
+        >
           {location.pathname === "/projects" ? `{ Projects }` : `  Projects  `}
         </NavLink>
-        <NavLink to="/contact" className={" text-xl"}>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+          }
+        >
           {location.pathname === "/contact" ? `{ Contact }` : " Contact "}
         </NavLink>
       </div>
-      <div>
+      <div className="justify-self-end">
         <Button
           children="Download cv"
-          className="px-6 text-xl tracking-wider align-middle rounded-md py-2 text-white m-2 bg-green-btn"
+          className="px-3 outline-none tracking-wider align-middle rounded-md py-2 text-white m-2 bg-green-btn"
           onClick={handleDownloadResume}
         />
       </div>
