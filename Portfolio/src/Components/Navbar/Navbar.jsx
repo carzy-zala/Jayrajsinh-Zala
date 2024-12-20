@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="grid grid-cols-[2fr_3fr_1fr] px-[10%] py-3 items-center justify-center ">
+    <nav className="z-50 grid grid-cols-[2fr_3fr_1fr] px-[10%] py-3 items-center justify-center sticky top-0 bg-[#F8F7F1]">
       <NavLink to="/" className="text-3xl font-montserrat font-semibold">
         <span className="text-green-btn">J</span>Zala.
       </NavLink>

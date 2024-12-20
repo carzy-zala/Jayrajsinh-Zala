@@ -1,0 +1,77 @@
+const projects = [
+    {
+      category: "MERN",
+      link: "https://promanage-delta.vercel.app/",
+      img_src: "/Projects/ProManage.png",
+      project_name: "Pro Manage",
+      skills: "MERN Stack",
+      description: `Task Manager web app — a streamlined tool for creating, editing, and organizing tasks and to-dos.`,
+    },
+    {
+      category: "MERN",
+      link: "https://jobportal-beta-one.vercel.app/",
+      img_src: "/Projects/JobPortal.png",
+      project_name: "Job Portal",
+      skills: "MERN Stack",
+      description: `This is a Full-Stack, single-page app that helps companies manage interview invites easily.`,
+    },
+    {
+      category: "MERN",
+      link: "https://quizzie-delta-umber.vercel.app/",
+      img_src: "/Projects/Quizzie.png",
+      project_name: "Quizzie",
+      skills: "MERN Stack",
+      description: `Elevate your engagement with my innovative quiz maker app, designed
+            to streamline the creation of custom quizzes and polls. `,
+    },
+    {
+      category: "MERN",
+      link: "https://webstory-one.vercel.app/",
+      img_src: "/Projects/Shortlife.png",
+      project_name: "Short Life",
+      skills: "MERN Stack",
+      description: `This web application is designed to offer users a platform for sharing their life stories in a brief and engaging format.`,
+    },
+    {
+      category: "MERN",
+      link: "https://tic-tac-toe-kappa-virid.vercel.app/",
+      img_src: "/Projects/TicTAc.png",
+      project_name: "Tic Tac Toe",
+      skills: "React",
+      description: `One of the most popular game in digital format for your fun.`,
+    },
+    {
+      category: "MERN",
+      link: "https://website-template-1-seven.vercel.app/",
+      img_src: "/Projects/WebOne.png",
+      project_name: "Website Template",
+      skills: "React",
+      description: `This is one website tamaplate to show case my react-router-dom knowledge and api connection knowledge.`,
+    },
+    {
+      category: "MERN",
+      link: "https://password-generator-pink-nine-13.vercel.app/",
+      img_src: "/Projects/PassGen.png",
+      project_name: "Password Generator",
+      skills: "React",
+      description: `This project is helps you to create password based on your prefernce.`,
+    },
+    {
+      category: "MERN",
+      link: "https://currency-convertor-zeta-smoky.vercel.app/",
+      img_src: "/Projects/CurrencyConvert.png",
+      project_name: "Currency Converter",
+      skills: "React",
+      description: `This project is use api to change the your local currency to the your desired country currency.`,
+    },
+    {
+      category: "MERN",
+      link: "https://theme-switcher-xi-peach.vercel.app/",
+      img_src: "/Projects/ThemeSwitcher.png",
+      project_name: "Theme Switcher",
+      skills: "React",
+      description: `This project is showcase of how we can switch the modes that offers in recent websites.`,
+    },
+  ];
+
+  export default projects

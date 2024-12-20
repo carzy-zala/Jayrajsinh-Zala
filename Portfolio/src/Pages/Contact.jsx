@@ -1,8 +1,8 @@
-
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Button } from "../Components/index.jsx";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -23,31 +23,36 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const serviceID = "your_service_id"; // Replace with your EmailJS Service ID
-    const templateID = "your_template_id"; // Replace with your EmailJS Template ID
-    const userID = "your_user_id"; // Replace with your EmailJS User ID
-
     const templateParams = {
       name: formData.name,
       email: formData.email,
       mobile: formData.mobile,
       message: formData.message,
-      to_email: "j.zala2553@gmail.com", // Your email address
+      to_email: "mr.zala2003@gmail.com", // Your email address
     };
 
-    emailjs.send(serviceID, templateID, templateParams, userID).then(
-      (response) => {
-        alert("Email sent successfully!");
-      },
-      (error) => {
-        console.error("Error sending email: ", error);
-        alert("Failed to send email. Please try again.");
-      }
-    );
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_USER_ID
+      )
+      .then(
+        (response) => {
+          toast.success(
+            "Email sent successfully! We will get back to you soon."
+          );
+          setFormData({ name: "", email: "", mobile: "", message: "" }); // Clear form fields after success
+        },
+        (error) => {
+          toast.error("Failed to send the email. Please try again.");
+        }
+      );
   };
 
   return (
-    <div className="px-[10%]  h-[80vh] grid grid-rows-[1fr_5fr] mb-10 gap-2">
+    <div className="px-[10%] h-[80vh] grid grid-rows-[1fr_5fr] mb-10 gap-2">
       <h1 className="text-5xl text-center pt-3 font-montserrat">
         Get Free Quotation!
       </h1>
@@ -100,6 +105,7 @@ function Contact() {
           </Button>
         </form>
       </div>
+      <ToastContainer position="top-center" autoClose={3000} />
     </div>
   );
 }
