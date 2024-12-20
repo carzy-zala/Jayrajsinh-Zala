@@ -3,6 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        floating: {
+          "0%": { transform: "translate(0, 0)" },
+          "25%": { transform: "translate(5px, -5px)" },
+          "50%": { transform: "translate(0, -10px)" },
+          "75%": { transform: "translate(-5px, -5px)" },
+          "100%": { transform: "translate(0, 0)" },
+        },
+      },
+      animation: {
+        floating: "floating 4s ease-in-out infinite",
+      },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
@@ -11,7 +23,7 @@ export default {
         lavishly: ["Lavishly Yours", "cursive"],
       },
       boxShadow: {
-        custom: "rgba(17, 12, 46, 0.15) 0px 48px 50px 0px;", 
+        custom: "rgba(17, 12, 46, 0.15) 0px 48px 50px 0px;",
       },
       colors: {
         "green-btn": "#286F6C",

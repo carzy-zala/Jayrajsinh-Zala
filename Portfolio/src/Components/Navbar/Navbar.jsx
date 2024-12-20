@@ -28,12 +28,12 @@ function Navbar() {
           {location.pathname === "/" ? `{ Home }` : `  Home  `}
         </NavLink>
         <NavLink
-          to="/services"
+          to="/skills"
           className={({ isActive }) =>
             `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
           }
         >
-          {location.pathname === "/services" ? `{ Services }` : `  Services  `}
+          {location.pathname === "/skills" ? `{ Skills }` : `  Skills  `}
         </NavLink>
         <NavLink
           to="/projects"

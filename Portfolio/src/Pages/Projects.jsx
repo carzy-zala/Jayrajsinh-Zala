@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Projects() {
-  return (
-    <div>
-      Projects
-    </div>
-  )
+  return <div className="px-[10%] py-2"></div>;
 }
 
-export default Projects
+export default Projects;

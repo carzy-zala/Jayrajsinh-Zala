@@ -91,7 +91,7 @@ function Home() {
   //#endregion
 
   return (
-    <section className="grid grid-cols-[1.5fr_1fr_2fr] grid-rows-[1.5fr_1.5fr_2fr] px-[10%] gap-1 h-[80vh] pt-[5%]">
+    <section className="grid grid-cols-[1.5fr_1fr_2fr] grid-rows-[1.5fr_1.5fr_2fr] px-[10%] gap-1 h-[80vh] pt-[5%] mb-10">
       {/* Name  */}
 
       <div className="w-full h-[100%] row-start-1 col-start-1  grid grid-rows-2 items-end pt-3">
