@@ -14,15 +14,15 @@ function Navbar() {
   };
 
   return (
-    <nav className="z-50 grid grid-cols-[2fr_3fr_1fr] px-[10%] py-3 items-center justify-center sticky top-0 bg-[#F8F7F1]">
+    <nav className="z-50 grid lg:grid-cols-[1.5fr_2.5fr_1fr] lg:px-[10%] py-3 sticky top-0 bg-[#F8F7F1] place-items-center gap-2 p-2 text-sm mobile:text-md">
       <NavLink to="/" className="text-3xl font-montserrat font-semibold">
         <span className="text-green-btn">J</span>Zala.
       </NavLink>
-      <div className="  grid grid-cols-4 items-center place-items-center">
+      <div className="  grid grid-cols-[1.3fr_1.2fr_1.5fr_1.5fr]  gap-1 w-full place-items-center">
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+            `${isActive ? "text-green-btn font-medium" : "text-black"} lg:text-lg `
           }
         >
           {location.pathname === "/" ? `{ Home }` : `  Home  `}
@@ -30,7 +30,7 @@ function Navbar() {
         <NavLink
           to="/skills"
           className={({ isActive }) =>
-            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+            `${isActive ? "text-green-btn font-medium" : "text-black"} lg:text-lg`
           }
         >
           {location.pathname === "/skills" ? `{ Skills }` : `  Skills  `}
@@ -38,7 +38,7 @@ function Navbar() {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+            `${isActive ? "text-green-btn font-medium" : "text-black"} lg:text-lg`
           }
         >
           {location.pathname === "/projects" ? `{ Projects }` : `  Projects  `}
@@ -46,13 +46,13 @@ function Navbar() {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `${isActive ? "text-green-btn font-medium" : "text-black"} text-lg`
+            `${isActive ? "text-green-btn font-medium" : "text-black"} lg:text-lg`
           }
         >
           {location.pathname === "/contact" ? `{ Contact }` : " Contact "}
         </NavLink>
       </div>
-      <div className="justify-self-end">
+      <div className="justify-self-center lg:justify-self-end">
         <Button
           children="Download cv"
           className="px-3 outline-none tracking-wider align-middle rounded-md py-2 text-white m-2 bg-green-btn"

@@ -9,7 +9,7 @@ function Projects() {
 
   return (
     <div className="px-[10%] py-2 pb-12 grid grid-rows-[0fr_1fr] gap-3 ">
-      <div className="grid grid-cols-4 gap-2 w-[500px] p-2 bg-green-btn text-white rounded justify-self-center ">
+      <div className="grid grid-cols-1 gap-2 w-[200px] md:w-[500px] md:grid-cols-4 p-2 bg-green-btn text-white rounded justify-self-center ">
         <Button
           className={`${
             category === "all"
@@ -55,7 +55,7 @@ function Projects() {
           children="Selenium"
         />
       </div>
-      <div className=" grid grid-cols-3 gap-y-12 place-items-center ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 place-items-center ">
         {projects.map(
           (project) =>
             (category === "all" || category === project.category) && (

@@ -52,11 +52,11 @@ function Contact() {
   };
 
   return (
-    <div className="px-[10%] h-[80vh] grid grid-rows-[1fr_5fr] mb-10 gap-2">
+    <div className="px-[10%] grid grid-rows-[1fr_5fr] mb-10 gap-2">
       <h1 className="text-5xl text-center pt-3 font-montserrat">
         Get Free Quotation!
       </h1>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="justify-self-center self-center">
           <img src="/contact-img.jpg" alt="Mail image" className="h-[300px]" />
         </div>

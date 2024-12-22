@@ -30,6 +30,9 @@ export default {
         "green-btn-300": "#51b8b3",
         "name-color": "#456284",
       },
+      screens:{
+        "mobile":"320px"
+      }
     },
   },
   plugins: [],

@@ -56,7 +56,9 @@ function Skills() {
   ];
 
   return (
-    <div className="grid grid-cols-4 justify-center items-center pt-6 pb-6  gap-16 px-[10%] ">
+    <div className="grid grid-cols-2  gap-6 justify-center items-center pt-6 pb-6  px-[5%]  md:px-[10%] 
+    md:grid-cols-3 lg:grid-cols-4 md:gap-16
+    ">
       {skillsImageAndName.map((skills) => (
         <FloatingCard name={skills.name}>
           <img src={skills.image} />

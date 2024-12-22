@@ -2,7 +2,7 @@ import React from "react";
 
 const FloatingCard = ({ name, children }) => {
   return (
-    <div className=" group w-48 h-48 bg-white rounded-lg shadow-lg flex items-center justify-center text-center animate-floating overflow-hidden p-10 ">
+    <div className=" group md:w-48 md:h-48  bg-white rounded-lg shadow-lg flex items-center justify-center text-center animate-floating overflow-hidden h-25 w-25 p-4 md:p-6 lg:p-10 ">
       {/* Children content */}
       {children}
 

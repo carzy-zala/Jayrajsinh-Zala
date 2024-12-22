@@ -23,7 +23,7 @@ function Home() {
         setCurrentIndex((prev) => (prev + 1) % testimonials.length); // Move to next testimonial
         setAnimate(false); // Trigger fade-in animation
       }, 500); // Match the duration of the fade-out animation
-    }, 1500);
+    }, 5000);
 
     return () => clearInterval(interval); // Clean up on unmount
   }, [testimonials.length]);
@@ -91,14 +91,20 @@ function Home() {
   //#endregion
 
   return (
-    <section className="grid grid-cols-[1.5fr_1fr_2fr] grid-rows-[1.5fr_1.5fr_2fr] px-[10%] gap-1 h-[80vh] pt-[5%] mb-10">
+    <section
+      className="xl:grid xl:grid-cols-[1.5fr_1fr_2fr] xl:grid-rows-[1.5fr_1.5fr_2fr] xl:gap-1 
+
+    grid grid-cols-2 grid-rows-[0fr_0fr_1.5fr_0fr_0fr]  gap-2
+
+    xl:px-[10%] xl:pt-[5%] xl:mb-28 px-[5%]"
+    >
       {/* Name  */}
 
-      <div className="w-full h-[100%] row-start-1 col-start-1  grid grid-rows-2 items-end pt-3">
-        <div className="font-bubblegum text-3xl font-medium tracking-wider ">
+      <div className="w-full h-[100%] xl:row-start-1 xl:col-start-1  grid grid-rows-2 items-end pt-3  col-span-2 xl:col-span-1 ">
+        <div className="font-bubblegum xl:text-3xl font-medium tracking-wider text-xl">
           Hy!I Am
         </div>
-        <div className=" text-4xl font-semibold  text-green-btn ">
+        <div className=" xl:text-4xl font-semibold  text-green-btn text-2xl">
           Jayrajsnh Zala.
         </div>
         <div></div>
@@ -106,7 +112,7 @@ function Home() {
 
       {/* tag line */}
 
-      <div className="w-full h-[100%] row-start-1 col-start-3 ">
+      <div className="w-full xl:row-start-1 xl:col-start-3 col-span-2 text-sm xl:text-xl">
         <div className="text-right">
           I craft elegent and Building the future
         </div>
@@ -114,15 +120,15 @@ function Home() {
       </div>
 
       {/* Arrow Image */}
-      <div className="w-full h-[100%] row-start-2 col-start-1 ">
+      <div className="w-full  xl:row-start-2 xl:col-start-1 row-start-3 col-start-1 ">
         <img
           src="/arraow.svg"
-          className="h-[10rem] w-[20rem] absolute left-[20%] rotate-12"
+          className="xl:h-[10rem] xl:w-[20rem] absolute xl:bottom-40 bottom-24 xl:left-[20%] xl:rotate-12 rotate-[30deg] w-[15rem] "
         />
       </div>
 
       {/* Testimonial */}
-      <div className="row-start-2 col-start-3 testimonial-container w-[75%] h-[70%] rounded-md items-center shadow-custom bg-white justify-self-center grid grid-rows-3 p-3 px-4 self-center">
+      <div className="xl:row-start-2 xl:col-start-3 row-start-5 col-span-2 testimonial-container w-[300px] h-[100px] rounded-md items-center shadow-custom bg-white justify-self-center grid grid-rows-3 p-3 px-4 self-center">
         <div
           className={`testimonial-text row-span-2 ${
             animate ? "fade-out" : "fade-in"
@@ -140,15 +146,15 @@ function Home() {
       </div>
 
       {/* Social */}
-      <div className="w-full h-[100%]  grid grid-rows-2 row-start-3 col-start-1">
-        <div className="grid grid-cols-[0.2fr_1fr]">
+      <div className="w-full h-[100%]  grid grid-rows-2 xl:row-start-3 xl:col-start-1 row-start-4 col-span-2 py-5 gap-3 xl:gap-5">
+        <div className="grid grid-cols-[0.2fr_1fr] xl:justify-self-start justify-self-center gap-3">
           <div className="text-5xl text-green-btn">01</div>
           <div>
             <div>YEARS</div>
             <div>EXPERIENCE</div>
           </div>
         </div>
-        <div className="grid grid-cols-6 items-center">
+        <div className="grid grid-cols-3 place-items-center xl:place-items-start items-center justify-between xl:grid-cols-6 ">
           {/* <Link >
             <img src="/social/fb.png"/>
           </Link> */}
@@ -174,22 +180,21 @@ function Home() {
       </div>
 
       {/* Main hero Image */}
-      <div className="w-full h-[100%] row-start-3 col-start-2 ">
-        {/* <div className="bg-green-btn-300 absolute w-[230px] h-[230px] bottom-10 rounded-[50%]"></div> */}
-        <div className="bg-green-btn absolute w-[230px] rotate-6 h-[250px] bottom-10 rounded-[50%]"></div>
+      <div className="w-full xl:row-start-3 xl:col-start-2 row-span-3 col-start-2 ">
+        <div className="bg-green-btn absolute xl:w-[230px]  xl:h-[250px] w-[150px]  h-[150px]  xl:bottom-10 rounded-[50%] bottom-0"></div>
 
         <img
           src="/cartoon-img-2.png"
-          className="absolute bottom-10 h-[450px] left-[34%] "
+          className="absolute    h-[230px] bottom-1   xl:bottom-10 xl:h-[450px] xl:left-[34%] "
         />
       </div>
 
       {/* TEchnolies */}
-      <div className="w-full h-[100%] grid grid-rows-4 grid-cols-[1fr_1fr_0.3fr] row-start-3 col-start-3">
-        <div className="font-lavishly text-3xl row-start-3 col-start-2 col-span-2 justify-self-center ">
+      <div className="w-full h-[150px] grid grid-rows-2 xl:row-start-3 xl:col-start-3  row-start-3 col-start-1 self-end p-6 ">
+        <div className="font-lavishly xl:text-3xl   justify-self-center self-end xl:justify-self-end xl:pr-24 ">
           {displayedText[0]}
         </div>
-        <div className="text-2xl text-green-btn font-semibold row-start-4 col-start-2  col-span-2 justify-self-end">
+        <div className="xl:text-2xl text-green-btn font-semibold  justify-self-end xl:">
           {displayedText[1]}
         </div>
       </div>
