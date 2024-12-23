@@ -52,7 +52,7 @@ function Contact() {
   };
 
   return (
-    <div className="px-[10%] grid grid-rows-[1fr_5fr] mb-10 gap-2">
+    <div className="xl:px-[10%] grid grid-rows-[1fr_5fr] mb-10 gap-2 px-2">
       <h1 className="text-5xl text-center pt-3 font-montserrat">
         Get Free Quotation!
       </h1>

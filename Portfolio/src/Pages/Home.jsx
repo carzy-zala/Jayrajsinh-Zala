@@ -96,7 +96,7 @@ function Home() {
 
     grid grid-cols-2 grid-rows-[0fr_0fr_1.5fr_0fr_0fr]  gap-2
 
-    xl:px-[10%] xl:pt-[5%] xl:mb-28 px-[5%]"
+    xl:px-[10%] xl:pt-[5%] xl:mb-10 px-[5%]"
     >
       {/* Name  */}
 
@@ -181,11 +181,11 @@ function Home() {
 
       {/* Main hero Image */}
         <div className="w-full xl:row-start-3 xl:col-start-2 row-span-3 col-start-2 relative ">
-          <div className="bg-green-btn absolute xl:w-[230px]  xl:h-[250px] w-[150px]  h-[150px]  xl:bottom-10 rounded-[50%] bottom-0"></div>
+          <div className="bg-green-btn absolute xl:w-[230px]  xl:h-[250px] w-[150px]  h-[150px]  xl:bottom-10 rounded-[50%] bottom-72"></div>
 
           <img
             src="/cartoon-img-2.png"
-            className="absolute    h-[230px] bottom-1   xl:bottom-10 xl:h-[450px] xl:left-[34%] "
+            className="absolute h-[230px] bottom-72  xl:bottom-6 xl:h-[450px] xl:left-0 "
           />
         </div>
 
