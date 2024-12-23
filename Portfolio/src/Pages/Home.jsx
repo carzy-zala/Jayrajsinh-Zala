@@ -128,7 +128,7 @@ function Home() {
       </div>
 
       {/* Testimonial */}
-      <div className="xl:row-start-2 xl:col-start-3 row-start-5 col-span-2 testimonial-container w-[300px] h-[100px] rounded-md items-center shadow-custom bg-white justify-self-center grid grid-rows-3 p-3 px-4 self-center">
+      <div className="xl:row-start-2 xl:col-start-3 row-start-5 col-span-2 testimonial-container w-[300px] h-[100px] rounded-md items-center shadow-custom bg-white justify-self-center grid grid-rows-3 py-1 px-4 self-center">
         <div
           className={`testimonial-text row-span-2 ${
             animate ? "fade-out" : "fade-in"
