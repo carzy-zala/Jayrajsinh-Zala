@@ -180,14 +180,14 @@ function Home() {
       </div>
 
       {/* Main hero Image */}
-      <div className="w-full xl:row-start-3 xl:col-start-2 row-span-3 col-start-2 ">
-        <div className="bg-green-btn absolute xl:w-[230px]  xl:h-[250px] w-[150px]  h-[150px]  xl:bottom-10 rounded-[50%] bottom-0"></div>
+        <div className="w-full xl:row-start-3 xl:col-start-2 row-span-3 col-start-2 relative ">
+          <div className="bg-green-btn absolute xl:w-[230px]  xl:h-[250px] w-[150px]  h-[150px]  xl:bottom-10 rounded-[50%] bottom-0"></div>
 
-        <img
-          src="/cartoon-img-2.png"
-          className="absolute    h-[230px] bottom-1   xl:bottom-10 xl:h-[450px] xl:left-[34%] "
-        />
-      </div>
+          <img
+            src="/cartoon-img-2.png"
+            className="absolute    h-[230px] bottom-1   xl:bottom-10 xl:h-[450px] xl:left-[34%] "
+          />
+        </div>
 
       {/* TEchnolies */}
       <div className="w-full h-[150px] grid grid-rows-2 xl:row-start-3 xl:col-start-3  row-start-3 col-start-1 self-end p-6 ">
