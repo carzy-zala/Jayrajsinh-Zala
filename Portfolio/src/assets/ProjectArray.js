@@ -33,7 +33,7 @@ const projects = [
       description: `This web application is designed to offer users a platform for sharing their life stories in a brief and engaging format.`,
     },
     {
-      category: "MERN",
+      category: "React",
       link: "https://tic-tac-toe-kappa-virid.vercel.app/",
       img_src: "/Projects/TicTAc.png",
       project_name: "Tic Tac Toe",
@@ -41,7 +41,7 @@ const projects = [
       description: `One of the most popular game in digital format for your fun.`,
     },
     {
-      category: "MERN",
+      category: "React",
       link: "https://website-template-1-seven.vercel.app/",
       img_src: "/Projects/WebOne.png",
       project_name: "Website Template",
@@ -49,7 +49,7 @@ const projects = [
       description: `This is one website tamaplate to show case my react-router-dom knowledge and api connection knowledge.`,
     },
     {
-      category: "MERN",
+      category: "React",
       link: "https://password-generator-pink-nine-13.vercel.app/",
       img_src: "/Projects/PassGen.png",
       project_name: "Password Generator",
@@ -57,7 +57,7 @@ const projects = [
       description: `This project is helps you to create password based on your prefernce.`,
     },
     {
-      category: "MERN",
+      category: "React",
       link: "https://currency-convertor-zeta-smoky.vercel.app/",
       img_src: "/Projects/CurrencyConvert.png",
       project_name: "Currency Converter",
@@ -65,7 +65,7 @@ const projects = [
       description: `This project is use api to change the your local currency to the your desired country currency.`,
     },
     {
-      category: "MERN",
+      category: "React",
       link: "https://theme-switcher-xi-peach.vercel.app/",
       img_src: "/Projects/ThemeSwitcher.png",
       project_name: "Theme Switcher",
