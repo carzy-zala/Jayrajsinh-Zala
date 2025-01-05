@@ -33,6 +33,14 @@ const projects = [
       description: `This web application is designed to offer users a platform for sharing their life stories in a brief and engaging format.`,
     },
     {
+      category: "MERN",
+      link: "https://payspaze.vercel.app/",
+      img_src: "/Projects/PaySpaze.png",
+      project_name: "PaySpaze",
+      skills: "MERN Stack",
+      description: `This is simple web app simulating the payment transfer of forex.`,
+    },
+    {
       category: "React",
       link: "https://tic-tac-toe-kappa-virid.vercel.app/",
       img_src: "/Projects/TicTAc.png",
